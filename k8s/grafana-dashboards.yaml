@@ -1,0 +1,24 @@
+apiVersion: v1
+data:
+  dashboards.yaml: |-
+    {
+      "apiVersion": 1,
+      "providers": [
+        {
+          "name": "unik",
+          "orgId": 1,
+          "folder": "",
+          "folderUid": "",
+          "type": "file",
+          "disableDeletion": false,
+          "updateIntervalSeconds": 10,
+          "allowUiUpdates": false,
+          "options": {
+            "path": "/grafana/dashboards",
+          }
+        }
+      ]
+    }
+kind: ConfigMap
+metadata:
+  name: grafana-dashboards
